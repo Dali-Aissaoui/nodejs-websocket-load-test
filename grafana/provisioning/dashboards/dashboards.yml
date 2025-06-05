@@ -1,0 +1,20 @@
+apiVersion: 1
+
+providers:
+  - name: 'WebSocket Demo'
+    orgId: 1
+    folder: ''
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
+      
+  - name: 'WebSocket Event Loop Metrics'
+    orgId: 1
+    folder: ''
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards/event_loop_metrics.json
