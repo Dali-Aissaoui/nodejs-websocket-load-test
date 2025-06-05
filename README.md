@@ -132,6 +132,24 @@ During high-load scenarios, watch for:
 3. **Memory Usage**: Helps identify memory leaks or consumption patterns
 4. **CPU Utilization**: Indicates processing bottlenecks
 
+## Dashboard Screenshots
+
+### Event Loop Metrics Dashboard
+
+![Event Loop Metrics Dashboard](docs/images/event-loop-metrics.png)
+
+The Event Loop Metrics dashboard shows:
+- **Event Loop Lag**: Time (in ms) the event loop is blocked. Higher values indicate potential processing bottlenecks.
+- **Event Loop Utilization**: CPU utilization percentage of the Node.js process.
+
+### WebSocket Server Dashboard
+
+![WebSocket Server Dashboard](docs/images/websocket-server-dashboard.png)
+
+The WebSocket Server dashboard shows:
+- **Active Connections**: Number of currently connected WebSocket clients.
+- **Messages Received**: Rate of messages being processed by the server.
+
 ## Troubleshooting
 
 - If connections fail with "WebSocket was closed before the connection was established", try reducing the connection rate or increasing the ramp-up time.
